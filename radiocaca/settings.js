@@ -2,7 +2,7 @@ const settings = {
     "address": "",
     "sign": "",
     "msg": "",
-    "language": "en",
+    "language": "en", // 中文请把en换成: cn
     "metamonCount": 100,
     "skipBattle": false,
     "skipLevel": 0,

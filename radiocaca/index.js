@@ -24,11 +24,12 @@ i18n.setLocale(settings.language);
 /************************* Function *************************/
 const login = async () => {
     const res = await util.post(requests.login());
-    util.setHeader(res);
+    util.setHeader(res.accessToken);
 };
 
 const getMetamons = async () => {
     const res = await util.post(requests.getMyMonsterList());
+    res.metamonList.sort((a, b) => a.id - b.id);
     metamonList = res.metamonList;
 };
 
