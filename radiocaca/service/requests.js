@@ -11,7 +11,7 @@ const API_URL = 'https://metamon-api.radiocaca.com/usm-api';
 const login = () => {
     return {
         url: `${API_URL}/login`,
-        data: { ...baseData, sign: settings.sign, msg: settings.msg },
+        data: { ...baseData, sign: settings.sign, msg: settings.msg, network: 1, clientType: "MetaMask" },
         skipHeader: true
     }
 }
